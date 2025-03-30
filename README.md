@@ -1,15 +1,99 @@
-# Dummy Rollup Deploy
+# Espresso Rollup Integration
 
-## Local Dev
+## Build & Brew Hackathon Submission | Track 1: Caffeinate & Code
 
-```
-$ docker compose up
+![Espresso Network](https://cdn.dorahacks.io/static/files/195461b26b9dc69f277e97948ecac51a.jpg)
+
+## Overview
+
+This project demonstrates a fully functional rollup deployment integrated with Espresso's Decaf testnet and Arbitrum Sepolia. Our implementation leverages Espresso's fast confirmations to create a specialized L2 solution that [briefly describe your rollup's unique value proposition].
+
+### Key Features
+
+- 🚀 Fully functional rollup deployed on Espresso's Decaf testnet
+- ⚡ Integrated with Espresso confirmations for enhanced security and speed
+- 🔄 Seamless compatibility with Arbitrum Sepolia
+- 🔐 [Add key technical features of your rollup]
+
+## Deployment Information
+
+**CreateRollup Transaction Hash**: `0xf33d16d9449ab9624d3727726afe9f37414381cabf00fe3836101b3f3de6f176`
+
+**Cloud Server IP Address**: `3.27.107.202`
+
+**Chain ID / Namespace**: 898989
+
+## Technical Architecture
+
+Our rollup implementation consists of the following components:
+
+1. **Sequencer Node**: Responsible for transaction ordering and batch creation
+2. **Prover Service**: Generates validity proofs for transaction batches
+3. **Espresso Integration Layer**: Connects to Decaf testnet for fast confirmations
+4. **Arbitrum Bridge**: Enables cross-chain communication with Arbitrum Sepolia
+
+## Demo
+
+A complete demonstration of our rollup's functionality can be found in our [video demo](https://youtu.be/PGIDwCzqDxs).
+
+The demo showcases:
+- Rollup initialization and connection to Espresso Decaf
+- Transaction processing
+- Integration with Espresso confirmations
+- Proof verification
+- Docker logs showing the rollup in action
+
+## Setup & Installation
+
+### Prerequisites
+
+- Docker & Docker Compose
+- Node.js v16+
+- Golang 1.19+
+
+### Local Development Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/ikhwanhsn/espresso-build-something-1.git
+cd espresso-build-something-1
+
+# Install dependencies
+npm install
+
+# Configure environment
+cp .env.example .env
+# Edit .env file with your configuration
+
+# Start the rollup
+docker-compose up
 ```
 
-If you see this error:
+### Deployment Steps
+
+1. Configure AWS/cloud environment
+2. Set up necessary security groups
+3. Deploy using our automated script:
+
+```bash
+./scripts/deploy.sh
 ```
-error acting as staker                   
-err="error advancing stake from node 2 (hash 0xee288c5dcc61206e6868fa7a01da6abaabe22d6c849718a47eb361857b7e8dd8): error generating node action: block validation is still pending"
+
+## Testing
+
+```bash
+# Run unit tests
+npm test
+
+# Run integration tests
+npm run test:integration
 ```
-This error is expected when running a newly deployed rollup with no recent activity. It occurs because there are no new nodes to stake on or no new batches have been posted. Simply let the system continue running.
-# espresso-build-something-1
+
+## Acknowledgements
+
+- Espresso Network team for their technical support
+- [Any other acknowledgements]
+
+---
+
+*This project was created for the Espresso Build & Brew Hackathon (March 2025).*
