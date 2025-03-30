@@ -13,7 +13,6 @@ This project demonstrates a fully functional rollup deployment integrated with E
 - 🚀 Fully functional rollup deployed on Espresso's Decaf testnet
 - ⚡ Integrated with Espresso confirmations for enhanced security and speed
 - 🔄 Seamless compatibility with Arbitrum Sepolia
-- 🔐 [Add key technical features of your rollup]
 
 ## Deployment Information
 
@@ -92,7 +91,6 @@ npm run test:integration
 ## Acknowledgements
 
 - Espresso Network team for their technical support
-- [Any other acknowledgements]
 
 ---
 
