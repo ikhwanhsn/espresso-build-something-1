@@ -20,7 +20,7 @@ This project demonstrates a fully functional rollup deployment integrated with E
 
 **Cloud Server IP Address**: `3.27.107.202`
 
-**Chain ID / Namespace**: 898989
+**Chain ID / Namespace**: `898989`
 
 ## Technical Architecture
 
